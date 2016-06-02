@@ -10,11 +10,19 @@
 	<body>
 		<div class="container">
 			<header class="row">
-				<div class="twelve columns">
-					<?php wp_nav_menu(array(
-						'sort_column' => 'menu_order',
-						'container_class' => 'blank-menu-header'
-					));?>
-				</div>
-			<header/>
+    			<div class="nine columns">
+        			<h1>Blank WordPress Template</h1>
+        			<p>This is my WordPress template.</p>
+    			</div>
+				<!-- Add Search Form -->
+    			<div class="three columns">
+        			<?php get_search_form(); ?>
+    			</div>
+			</header>
+			<div class="twelve columns">
+				<?php wp_nav_menu(array(
+					'sort_column' => 'menu_order',
+					'container_class' => 'blank-menu-header'
+				));?>
+			</div>
 			<!-- END OF HEADER - BEGIN SECTION CONTENT -->

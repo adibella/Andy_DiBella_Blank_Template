@@ -18,8 +18,7 @@
 			<?php	} // end while
 				} // end if
 			?>
-<!-- END LOOP -->
-			<p>Body content goes here.</p>
+
 		</div>
 	</section>
 <?php get_footer(); ?>

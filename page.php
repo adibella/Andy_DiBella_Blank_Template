@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<section class="row">
+	<div class="row">
 		<div class="nine columns">
 <!-- BEGIN PAGE PHP -->
 			<?php if (have_posts()) :
@@ -11,9 +11,10 @@
 <!-- END PAGE PHP -->
 		</div>
 <!-- BEGIN SIDEBAR -->
-		<div class="three columns">
-			<?php get_sidebar(); ?>
+		<div class="threecolumns">
+			<h3>Sidebar Text</h3>
+			<p>This is the sidebar content to put in here.</p>
 		</div>
 <!-- END SIDEBAR -->
-	</section>
+	</div>
 <?php get_footer(); ?>

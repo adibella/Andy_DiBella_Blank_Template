@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Wordpress Template</title>
+		<title><?php bloginfo( 'name' ); ?></title>
 		<?php wp_head(); ?>
-		<!-- Links to styles.css -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	</head>
 
@@ -13,15 +12,16 @@
     			<div class="twelve columns">
 			<!-- Add Link to Home_url -->
 					<h1><a href="<?php $url = home_url('/');
-					echo $url;
-					?>"><?php bloginfo( 'name' ); ?></a></h1>
-					<p><?php bloginfo('description'); ?></p>
+					echo $url; ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2><?php bloginfo('description'); ?></h2>
     			</div>
+			</header>
+
 				<!-- Add Search Form -->
     			<div class="three columns">
         			<?php get_search_form(); ?>
     			</div>
-			</header>
+
 			<!-- Add Menu -->
 			<div class="twelve columns">
 				<?php wp_nav_menu(array(
@@ -29,4 +29,3 @@
 					'container_class' => 'blank-menu-header'
 				));?>
 			</div>
-			<!-- END OF HEADER - BEGIN SECTION CONTENT -->

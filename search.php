@@ -7,7 +7,7 @@ get_header(); ?>
         <div class="eight columns">
 			<?php if ( have_posts() ) :?>
 				<h1>
-					<?php printf(_('Search Results for: %s'), '<span>' . get_search_query(). '<span>');
+					<?php printf(_('Search Results for: %s'), '<span>' . get_search_query() . '<span>');
 					?>
 				</h1>
 
@@ -16,8 +16,8 @@ get_header(); ?>
 
 				<h2><?php the_title(); ?></h2>
 					<?php the_content();
-						endwhile;
-				else : ?>
+				endwhile;
+			endif : ?>
 				<h1>Nothing Found</h1>
 				<p>Sorry, but nothing matched your search criteria. Please try again with diffent search terms.</>
 			<?php endif; ?>

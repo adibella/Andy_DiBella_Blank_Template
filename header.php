@@ -9,7 +9,7 @@
 	<body>
 		<div class="container">
 			<header class="row">
-    			<div class="nine columns">
+    			<div class="twelve columns">
 			<!-- Add Link to Home_url -->
 					<h1><a href="<?php $url = home_url('/');
 					echo $url; ?>"><?php bloginfo( 'name' ); ?></a></h1>
@@ -18,15 +18,17 @@
 			</header>
 
 			<!-- Search Form -->
-    			<div class="three columns">
-        			<?php get_search_form(); ?>
-    			</div>
+    		<div class="three columns">
+        		<?php get_search_form(); ?>
+    		</div>
 
 			<!-- Menu -->
 			<div class="twelve columns">
-				<?php wp_nav_menu(array(
-					'sort_column' => 'menu_order',
-					'container_class' => 'blank-menu-header'
-				));?>
+				<?php
+					wp_nav_menu(array(
+						'sort_column' => 'menu_order',
+						'container_class' => 'blank-menu-header'
+					));
+				?>
 			</div>
 		</div>

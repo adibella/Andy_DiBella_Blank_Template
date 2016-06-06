@@ -15,12 +15,12 @@
 					echo $url; ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2><?php bloginfo('description'); ?></h2>
     			</div>
+			</header>
 
 			<!-- Search Form -->
     			<div class="three columns">
         			<?php get_search_form(); ?>
     			</div>
-			</header>
 
 			<!-- Menu -->
 			<div class="twelve columns">

@@ -7,15 +7,16 @@
 				while ( have_posts() ) {
 					the_post(); ?>
 		<!-- Add link to the title -->
-					<h3><?php the_title(); ?></h3>
+					<h3><a href="<?php the_permalink(); ?>"<?php the_title(); ?></a></h3>
 					<?php
 					if ( has_post_thumbnail() ) {
 						the_post_thumbnail('thumbnail');
 					}
-					the_excerpt();
-						} // end while
+					the_excerpt(); ?>
+		<p><a href="<?php the_permalink(); ?>">Read More</a></p>
+		<?php } // end while
 					} // end if
-					?>
+				?>
 		</div>
 	</section>
 
